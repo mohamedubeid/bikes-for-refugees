@@ -31,13 +31,33 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 0em 1.5em 0em 1.5em;
 
   /* Challenge: can you make the navigation links orange on hover? */
+}
+.navbar-light .navbar-nav .nav-link:hover{
+color: orange;
 }
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+button {
+  background-color: #c05326;
+  color:#fff;
+  padding:0.5em;
+  border-radius: 5px;
+  border-color: #c05326;
+}
+
+#vol {
+  background-color: #fff;
+  color: #c05326;
+  border-color: #fff;
+}
+button:hover,#vol:hover,button:focus,#vol:focus{
+  background-color: #934423;
+}
+
 
 /* Alert */
 
@@ -67,7 +87,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/Mena%20School/Full%20stack%20web/week_1/bikes-for-refugees/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,6 +119,17 @@ button {
 
 .article {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  border:0.5px solid #dccdc6;
+  border-radius: 5px;
+  
+}
+#art{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .article__image {
@@ -132,6 +163,9 @@ button {
   margin-bottom: 0;
 }
 
+
+
+
 /* Footer */
 
 .footer {
@@ -151,3 +185,34 @@ button {
     max-height: 80px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .jumbotron h2 {
+font-size:8px;
+  }
+  .jumbotron button{
+    width:130px;
+    font-size: small;
+  }
+  #vol{
+    width:80px;
+  }
+}
+
+/*.flex {
+  display:flex;
+  flex-direction: row;
+
+}*/
+
+#test{
+  display:flex;
+ /* flex-direction: ;*/
+  justify-content: space-around;
+  /*align-items: center;*/
+  /*background-color: gray;*/
+  /*margin: auto;*/
+}
+
+
+
